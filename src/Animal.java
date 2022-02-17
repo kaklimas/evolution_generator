@@ -5,9 +5,9 @@ import java.util.Random;
 
 public class Animal implements Settings{
     public Vector2d position;
-    private ArrayList<String> genes;
-    private Random rand;
-    private ArrayList<MoveDirection> directions;
+    private final ArrayList<String> genes;
+    private final Random rand;
+    private final ArrayList<MoveDirection> directions;
     public boolean isAlive;
     public boolean ifDisplay = true;
 
@@ -72,9 +72,9 @@ public class Animal implements Settings{
         g.fillOval(position.x, position.y, UNIT_SIZE, UNIT_SIZE);
         g.setColor(Color.white);
         g.drawString("" + currEnergy, position.x + 6, position.y + 16);
-        if (ifDisplay){
-            displayInfo(g);
-        }
+//        if (ifDisplay){
+//            displayInfo(g);
+//        }
     }
 
     private void convert(){
