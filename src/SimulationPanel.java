@@ -114,12 +114,12 @@ public class SimulationPanel extends JPanel implements ActionListener, Settings 
 
     public void draw(Graphics g) {
 
-        for (int i = 0; i < Settings.WIDTH / UNIT_SIZE; i++) {
-            g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, Settings.HEIGHT);
-        }
-        for (int j = 0; j < Settings.HEIGHT / UNIT_SIZE; j++) {
-            g.drawLine(0, j * UNIT_SIZE, Settings.WIDTH, j * UNIT_SIZE);
-        }
+//        for (int i = 0; i < Settings.WIDTH / UNIT_SIZE; i++) {
+//            g.drawLine(i * UNIT_SIZE, 0, i * UNIT_SIZE, Settings.HEIGHT);
+//        }
+//        for (int j = 0; j < Settings.HEIGHT / UNIT_SIZE; j++) {
+//            g.drawLine(0, j * UNIT_SIZE, Settings.WIDTH, j * UNIT_SIZE);
+//        }
         // print stats
 
         g.setColor(Color.GRAY);
@@ -129,7 +129,7 @@ public class SimulationPanel extends JPanel implements ActionListener, Settings 
         g.drawString("Plants left: " + plantNumber, 20, Settings.HEIGHT + 70);
 
         // draw jungle
-        drawJungle(g);
+        //drawJungle(g);
 
         // draw plants
         for (Plant plant : plants.values()) {

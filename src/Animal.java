@@ -70,8 +70,8 @@ public class Animal implements Settings{
     public void draw(Graphics g){
         g.setColor(color);
         g.fillOval(position.x, position.y, UNIT_SIZE, UNIT_SIZE);
-        g.setColor(Color.white);
-        g.drawString("" + currEnergy, position.x + 6, position.y + 16);
+        //g.setColor(Color.white);
+        //g.drawString("" + currEnergy, position.x + 6, position.y + 16);
 //        if (ifDisplay){
 //            displayInfo(g);
 //        }
